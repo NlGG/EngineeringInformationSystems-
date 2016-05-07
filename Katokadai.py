@@ -141,7 +141,6 @@ class Katokadai():
             right = [past_place[0], past_place[1]+1]
             morebefore_past_place = before_past_place
             before_past_place = past_place
-            print before_past_place[0], before_past_place[1]
             if past_place[0] == 11 and (past_place[1] != 0 and past_place[1] != 16): #上の辺
                 log[down[0]][down[1]] = self.cost_function2(past_place, down, log) + self.manhattan(past_place, goal)
                 log[left[0]][left[1]] = self.cost_function2(past_place, left, log) + self.manhattan(past_place, goal)
